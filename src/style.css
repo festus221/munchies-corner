@@ -24,9 +24,10 @@
 
 body{background:#f5f3eb}
 .app-shell{position:relative;isolation:isolate;background:rgba(250,249,244,.42)}
-.app-shell::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 8% 8%,rgba(217,231,177,.65),transparent 34%),radial-gradient(ellipse at 92% 20%,rgba(239,184,141,.36),transparent 30%),radial-gradient(ellipse at 62% 78%,rgba(209,222,190,.45),transparent 36%),linear-gradient(145deg,#f8f6ee 4%,#f3f1e8 55%,#f8eee2);background-attachment:fixed}
+.app-shell::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 8% 8%,rgba(217,231,177,.65),transparent 34%),radial-gradient(ellipse at 92% 20%,rgba(239,184,141,.36),transparent 30%),radial-gradient(ellipse at 62% 78%,rgba(209,222,190,.45),transparent 36%),linear-gradient(145deg,#f8f6ee 4%,#f3f1e8 55%,#f8eee2);background-size:150% 150%,150% 150%,160% 160%,100% 100%;background-attachment:fixed;animation:munchies-background 28s ease-in-out infinite alternate}
 .site-header{background:rgba(250,249,244,.82);backdrop-filter:blur(14px)}
 .menu-section{position:relative}
 .delivery-band{background:rgba(233,237,221,.82)}
 .payment-callout{background:linear-gradient(115deg,#f1f5df,#f8f1e5);border:1px solid #e3e8d5;border-radius:8px}
-@media(prefers-reduced-motion:reduce){.app-shell::before{background-attachment:scroll}}
+@keyframes munchies-background{0%{background-position:0% 0%,100% 0%,60% 100%,0% 0%}50%{background-position:35% 25%,65% 40%,30% 55%,0% 0%}100%{background-position:15% 55%,100% 15%,75% 20%,0% 0%}}
+@media(prefers-reduced-motion:reduce){.app-shell::before{background-attachment:scroll;animation:none}}
