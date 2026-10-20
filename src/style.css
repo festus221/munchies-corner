@@ -31,3 +31,13 @@ body{background:#f5f3eb}
 .payment-callout{background:linear-gradient(115deg,#f1f5df,#f8f1e5);border:1px solid #e3e8d5;border-radius:8px}
 @keyframes munchies-background{0%{background-position:0% 0%,100% 0%,60% 100%,0% 0%}50%{background-position:35% 25%,65% 40%,30% 55%,0% 0%}100%{background-position:15% 55%,100% 15%,75% 20%,0% 0%}}
 @media(prefers-reduced-motion:reduce){.app-shell::before{background-attachment:scroll;animation:none}}
+.updates-banner{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;gap:19px;margin-top:25px;padding:20px 25px;border:1px solid rgba(255,255,255,.55);border-radius:12px;background:linear-gradient(112deg,#26351f 0%,#45552c 56%,#72523b 100%);box-shadow:0 13px 30px rgba(48,59,35,.16);color:#fff}
+.updates-banner::after{content:'';position:absolute;z-index:-1;right:14%;top:-115px;width:270px;height:270px;border-radius:50%;background:radial-gradient(circle,rgba(216,244,93,.3),transparent 70%);pointer-events:none}
+.updates-banner-icon{display:grid;place-items:center;flex:none;width:48px;height:48px;border-radius:14px;background:var(--green);color:#344311;transform:rotate(-5deg)}
+.updates-banner-copy{min-width:0}
+.updates-banner-label{font-size:8px;font-weight:700;letter-spacing:1.5px;color:#e4efad}
+.updates-banner h2{font:600 clamp(20px,2.6vw,28px)/1.15 var(--serif);margin:4px 0}
+.updates-banner p{margin:0;color:rgba(255,255,255,.76);font-size:11px;line-height:1.5}
+.updates-banner-link{margin-left:auto;display:flex;align-items:center;justify-content:center;gap:8px;flex:none;min-height:40px;padding:0 13px;border-radius:5px;background:var(--green);color:#26351f;font-size:10px;font-weight:700;transition:transform .18s,background .18s}
+.updates-banner-link:hover{transform:translateY(-2px);background:#e5f6a4}
+@media(max-width:640px){.updates-banner{gap:12px;margin-top:15px;padding:16px 14px}.updates-banner-icon{width:40px;height:40px;border-radius:12px}.updates-banner-label{font-size:7px;letter-spacing:1px}.updates-banner h2{font-size:20px}.updates-banner p{font-size:10px}.updates-banner-link{min-height:35px;padding:0 9px;font-size:9px;gap:5px}.updates-banner-link svg{width:14px}}

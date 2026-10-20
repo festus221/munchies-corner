@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { createClient } from '@supabase/supabase-js';
 import {
   ArrowRight, BadgeCheck, Clock3, Minus, Plus, Search, ShoppingBag,
-  Smartphone, Truck, X,
+  Smartphone, Sparkles, Truck, X,
 } from 'lucide-react';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL?.trim();
@@ -148,6 +148,15 @@ function App() {
     <div className="app-shell">
       <Header signedIn={Boolean(customerUser)} authLoading={authLoading} cartCount={cartCount} onCart={() => setCartOpen(true)} onCustomerAuth={toggleCustomerAuth} />
       <main>
+          <aside className="updates-banner wrap" aria-label="Coming soon announcement">
+            <span className="updates-banner-icon"><Sparkles size={22} /></span>
+            <div className="updates-banner-copy">
+              <span className="updates-banner-label">A LITTLE SOMETHING IS COOKING</span>
+              <h2>Big updates are coming soon!</h2>
+              <p>Fresh new things are on the way. Stay tuned, food lovers.</p>
+            </div>
+            <a className="updates-banner-link" href="#menu">Explore the menu <ArrowRight size={17} /></a>
+          </aside>
           <section className="hero wrap">
             <div className="hero-copy">
               <span className="eyebrow"><span className="live-dot" /> YOUR NEW FAVOURITE CORNER</span>
