@@ -21,3 +21,12 @@
 @media(max-width:640px){.admin-access-card{padding:25px}.admin-account{align-items:flex-end;flex-direction:column;gap:8px}.admin-topline{align-items:flex-start}}
 .customer-auth-button{border:1px solid var(--line);background:transparent;min-height:36px;padding:0 12px;font-size:11px;font-weight:700;cursor:pointer}.customer-auth-button:hover{background:#fff}.customer-auth-modal{position:relative;margin:auto;top:50%;transform:translateY(-50%);animation:fade-in .18s ease-out}.customer-auth-modal .checkout-form{margin-top:23px}.customer-auth-modal .form-error{font-size:11px;color:#a24f42;line-height:1.5}.customer-auth-back{border:0;background:none;text-decoration:underline;cursor:pointer;font-size:11px;color:var(--muted);padding:8px}
 @media(max-width:640px){.header-actions{gap:9px}.open-status{display:none}.customer-auth-button{padding:0 9px;font-size:10px}.customer-auth-modal{top:50%;width:calc(100% - 34px);padding:24px 20px}}
+
+body{background:#f5f3eb}
+.app-shell{position:relative;isolation:isolate;background:rgba(250,249,244,.42)}
+.app-shell::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 8% 8%,rgba(217,231,177,.65),transparent 34%),radial-gradient(ellipse at 92% 20%,rgba(239,184,141,.36),transparent 30%),radial-gradient(ellipse at 62% 78%,rgba(209,222,190,.45),transparent 36%),linear-gradient(145deg,#f8f6ee 4%,#f3f1e8 55%,#f8eee2);background-attachment:fixed}
+.site-header{background:rgba(250,249,244,.82);backdrop-filter:blur(14px)}
+.menu-section{position:relative}
+.delivery-band{background:rgba(233,237,221,.82)}
+.payment-callout{background:linear-gradient(115deg,#f1f5df,#f8f1e5);border:1px solid #e3e8d5;border-radius:8px}
+@media(prefers-reduced-motion:reduce){.app-shell::before{background-attachment:scroll}}

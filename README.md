@@ -30,7 +30,9 @@ Until Supabase Auth and email delivery are configured, sign-in links cannot be s
 
 ## Demo behavior
 
-Customers can order as guests or optionally sign in with an email one-time link. Checkout opens WhatsApp with the items, total, customer name, email, phone number, delivery destination, and kitchen note prefilled. Customers must press **Send** in WhatsApp to submit the order. Orders are not stored by this demo's website backend. Delivery is free on every order. Customers pay after delivery by Safaricom Send Money to **0794800487**. Contact: [bungeygarethh@gmail.com](mailto:bungeygarethh@gmail.com) or WhatsApp at [0794800487](https://wa.me/254794800487).
+Customers can order as guests or optionally sign in with an email one-time link. Checkout opens WhatsApp with the items, total, customer name, email, phone number, delivery destination, and kitchen note prefilled. Customers must press **Send** in WhatsApp to submit the order. Orders are not stored by this demo's website backend. Delivery is free on every order. Customers pay after delivery using Safaricom **Lipa na Pochi la Biashara** at **0794800487**.
+
+Contact: [bungeygarethh@gmail.com](mailto:bungeygarethh@gmail.com) or WhatsApp at [0794800487](https://wa.me/254794800487).
 
 Current menu specials: two butternut cinnamon rolls for KSh 145, a cinnamon roll for KSh 65, and uncooked samosas for KSh 25 each. Other sample menu items are marked as coming soon.
 

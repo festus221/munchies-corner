@@ -14,4 +14,4 @@
 
 - Customers can order as guests or optionally sign in by email with Supabase configured.
 - Checkout opens WhatsApp with an order message prefilled; customers must press Send to submit it.
-- Checkout displays pay-after-delivery instructions for 0794800487; no payment processing is integrated.
+- Checkout displays pay-after-delivery instructions for Lipa na Pochi la Biashara to 0794800487; no payment processing is integrated.
